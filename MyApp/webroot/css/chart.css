@@ -1,0 +1,99 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 08/11/2017, 8:31:49 AM
+    Author     : david
+*/
+
+
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: #000;
+  font: 10px sans-serif;
+  text-anchor: middle;
+}
+.chart .hint {
+  fill: #000;
+  font: 12px sans-serif;
+}
+
+.chart rect:hover {
+  fill: orangered ;
+}
+
+rect.background {
+  fill: white;
+}
+rect.background:hover {
+  fill: white;
+}
+.axis text {
+  fill: #000;
+  font: 10px sans-serif;
+}
+.bar text {
+  fill: #000;
+  font: 10px sans-serif;
+}
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.line {
+  fill: none;
+  stroke: #000;
+}
+
+.x text {
+    display:block;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  line-height: 1;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border: 0px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.d3-tip {
+  line-height: 1;
+  font-weight: bold;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  border-radius: 2px;
+}
+
+/* Creates a small triangle extender for the tooltip */
+.d3-tip:after {
+  box-sizing: border-box;
+  display: inline;
+  font-size: 10px;
+  width: 100%;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.8);
+  content: "\25BC";
+  position: absolute;
+  text-align: center;
+}
+
+/* Style northward tooltips differently */
+.d3-tip.n:after {
+  margin: -1px 0 0 0;
+  top: 100%;
+  left: 0;
+}
